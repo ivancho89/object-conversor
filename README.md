@@ -79,3 +79,16 @@ if you log the object you will be able to see how the key change
         path3: 'This is level 1 - path 3',
         path5: 'This is level 1 - path 5'
     }
+
+## Example - See perfromance
+
+You can test the same example before but now after run the *pathValueModifier* you can run the *showPerformance* to get data about the performance of the library.
+
+    The script uses approximately 2.35 MB
+
+or something more specific (using *showCompletePerformance* method)
+
+    rss 25.63 MB
+    heapTotal 5.49 MB
+    heapUsed 3.6 MB
+    external 0.01 MB

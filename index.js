@@ -131,12 +131,20 @@ const objectRecursiveIterator = (obj, config) =>{
     objectRecursiveIterator(obj, config)
 }
 
-const showPerformance = () => {
+const showBasicPerformance = () => {
     const used = process.memoryUsage().heapUsed / 1024 / 1024;
     console.log(`The script uses approximately ${Math.round(used * 100) / 100} MB`);
 }
 
+const showCompletePerformance = ()=>{
+    const used = process.memoryUsage();
+    for (let key in used) {
+    console.log(`${key} ${Math.round(used[key] / 1024 / 1024 * 100) / 100} MB`);
+    }
+}
+
 module.exports = {
     pathValueModifier,
-    showPerformance
+    showPerformance,
+    showCompletePerformance
 }
