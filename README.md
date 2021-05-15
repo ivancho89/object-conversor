@@ -1,4 +1,4 @@
-# Object Converter
+# Path-Value-Modifier
 
 Converts the values of the properties of an arbitrary object to another language/unit
 
@@ -8,14 +8,14 @@ Converts the values of the properties of an arbitrary object to another language
 
   You can install nodejs and npm easily with npm install, just run the following commands.
 
-      $ npm install object-converter
+      $ npm install path-value-modifier
 
 
 ## Use
 
     You can use the librari with a basic rqueire in your file
 
-        const converter = require('object-converter');
+        const converter = require('path-value-modifier');
 
     from there you can use the methods objectConverter to convert the property you need and also if you need to see the performance in the console you can use the method showPerformance.
 
