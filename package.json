@@ -1,0 +1,15 @@
+{
+  "name": "object-conversor",
+  "version": "1.0.0",
+  "description": "Object Conv - Tech Test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "author": "Ivan D Gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
