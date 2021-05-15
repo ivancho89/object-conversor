@@ -1,6 +1,6 @@
 {
   "name": "path-value-modifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Path-Value-Modifier - Tech Test",
   "main": "index.js",
   "scripts": {

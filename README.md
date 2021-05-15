@@ -18,7 +18,7 @@ You can use the librari with a basic rqueire in your file
 
     const converter = require('path-value-modifier');
 
-from there you can use the methods *pathValueModifier* to convert a property you need and also if you need to see the performance in the console you can use the method *showPerformance*.
+from there you can use the methods *pathValueModifier* to convert a property you need and also if you need to see the performance in the console you can use the method *showBasicPerformance* or *showCompletePerformance* to get more information about the performance
 
 The objectConverter has two params:
 
@@ -66,7 +66,7 @@ Then you can create or use a nested object, here is a basic example:
     }
 
 
-As you can see there are multiple leveles, you can use the *pathValueModifier* to change the value of a key
+As you can see there are multiple levels, you can use the *pathValueModifier* to change the value of a key
 
     converter.pathValueModifier(regularObj, {path:"path1/path4/path5", value:"Hello World"})
 
@@ -83,7 +83,7 @@ if you log the object you will be able to see how the key change
 
 ## Example - Performance
 
-You can test the same example before but now after run the *pathValueModifier* you can run the *showPerformance* to get data about the performance of the library.
+You can test the same example before but now after run the *pathValueModifier* you can run the *showBasicPerformance* to get data about the performance of the library.
 
     The script uses approximately 2.35 MB
 
@@ -93,3 +93,8 @@ or something more specific (using *showCompletePerformance* method)
     heapTotal 5.49 MB
     heapUsed 3.6 MB
     external 0.01 MB
+
+## To improve 
+
+- Create `translateStr` function to translate strings to an specific language
+- Review logic, optimice the recursive methods

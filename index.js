@@ -21,13 +21,6 @@ const calcObjHeight = (obj ={}, counter = 0)=>{
     })
     return counter
 }
-
-
-const translateStr = (srt = "") =>{
-
-    return srt
-
-}
 /**
  * Convert the given value for a key acorrding the type
  * @param {Object} obj  Original object
@@ -47,12 +40,10 @@ const convertValue =  (obj, key, value, operation = '*')=>{
 
             const hasSameType = keyType === valueType
             if(hasSameType && keyType === 'string'){
-
-                obj[key] =  value
+                obj[key] =  value.split('').sort(function(){return 0.5-Math.random()}).join('');
             }else if(hasSameType && keyType === 'number'){
 
                 switch(operation){
-
                     case '+':
                         obj[key] = obj[key] + value
                     break;
@@ -145,6 +136,6 @@ const showCompletePerformance = ()=>{
 
 module.exports = {
     pathValueModifier,
-    showPerformance,
+    showBasicPerformance,
     showCompletePerformance
 }
