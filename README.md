@@ -10,6 +10,7 @@ You can install nodejs and npm easily with npm install, just run the following c
 
     $ npm install path-value-modifier
 
+You can also clone the repo `https://github.com/ivancho89/path-value-modifier` and tun the tests *npm test* 
 
 ## Use
 
@@ -80,7 +81,7 @@ if you log the object you will be able to see how the key change
         path5: 'This is level 1 - path 5'
     }
 
-## Example - See perfromance
+## Example - Performance
 
 You can test the same example before but now after run the *pathValueModifier* you can run the *showPerformance* to get data about the performance of the library.
 
